@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML5 Color Input Type</title>
+<script>
+    function getValue() {
+        var color = document.getElementById("mycolor").value;
+        alert(color);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="mycolor">Select Color:</label>
+        <input type="color" value="#00ff00" id="mycolor">
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+</body>
+</html>  
+
+<html lang="en">
+<head>
+<title>HTML5 Date Input Type</title>
+<script>
+    function getValue() {
+        var date = document.getElementById("mydate").value;
+        alert(date);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="mydate">Select Date:</label>
+        <input type="date" value="2019-04-15" id="mydate">
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+</body>
+</html>
+
+<html lang="en">
+<head>
+<title>HTML5 Datetime-local Input Type</title>
+<script>
+    function getValue() {
+        var datetime = document.getElementById("mydatetime").value;
+        alert(datetime);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="mydatetime">Choose Date and Time:</label>
+        <input type="datetime-local" id="mydatetime">
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+</body>
+</html>                            
+
+
+<html lang="en">
+<head>
+<title>HTML5 Email Input Type</title>
+<style>
+    input[type="email"]:valid{
+        outline: 2px solid green;
+    }
+    input[type="email"]:invalid{
+        outline: 2px solid red;
+    }
+</style>
+<script>
+    function getValue() {
+        var email = document.getElementById("myemail").value;
+        alert(email);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="myemail">Enter Email Address:</label>
+        <input type="email" id="myemail" required>
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+</body>
+</html>     
+
+
+<html lang="en">
+<head>
+<title>HTML5 Month Input Type</title>
+<script>
+    function getValue() {
+        var month = document.getElementById("mymonth").value;
+        alert(month);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="mymonth">Select Month:</label>
+        <input type="month" id="mymonth">
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+</body>
+</html>
+
+
+<html lang="en">
+<head>
+<title>HTML5 Number Input Type</title>
+<style>
+    input[type="number"]:valid{
+        outline: 2px solid green;
+    }
+    input[type="number"]:invalid{
+        outline: 2px solid red;
+    }
+</style>
+<script>
+    function getValue() {
+        var number = document.getElementById("mynumber").value;
+        alert(number);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="mynumber">Enter a Number:</label>
+        <input type="number" min="1" max="10" step="0.5" id="mynumber">
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+    <p><strong>Note</strong>: If you try to enter the number out of the range (1-10) or text character it will show error.</p>
+</body>
+</html>
+
+
+
+
+<html lang="en">
+<head>
+<title>HTML5 Range Input Type</title>
+<script>
+    function getValue() {
+        var number = document.getElementById("mynumber").value;
+        alert(number);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="mynumber">Select a Number:</label>
+        <input type="range" min="1" max="10" step="0.5" id="mynumber">    
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+</body>
+</html>
+
+
+
+<html lang="en">
+<head>
+<title>HTML5 Search Input Type</title>
+<script>
+    function getValue() {
+        var term = document.getElementById("mysearch").value;
+        alert(term);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="mysearch">Search Website:</label>
+        <input type="search" id="mysearch" placeholder="Type something...">
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+</body>
+</html>
+
+
+
+<html lang="en">
+<head>
+<title>HTML5 Tel Input Type</title>
+<script>
+    function getValue() {
+        var phone = document.getElementById("myphone").value;
+        alert(phone);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="myphone">Telephone Number:</label>
+        <input type="tel" id="myphone" placeholder="xx-xxxx-xxxx" required>
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+</body>
+</html>
+
+
+
+<html lang="en">
+<head>
+<title>HTML5 Time Input Type</title>
+<script>
+    function getValue() {
+        var time = document.getElementById("mytime").value;
+        alert(time);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="mytime">Select Time:</label>
+        <input type="time" id="mytime">
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+</body>
+</html>
+
+
+
+<html lang="en">
+<head>
+<title>HTML5 URL Input Type</title>
+<style>
+    input[type="url"]:valid{
+        outline: 2px solid green;
+    }
+    input[type="url"]:invalid{
+        outline: 2px solid red;
+    }
+</style>
+<script>
+    function getValue() {
+        var url = document.getElementById("myurl").value;
+        alert(url);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="myurl">Enter Website URL:</label>
+        <input type="url" id="myurl" required>
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+    <p><strong>Note</strong>: Enter URL in the form like https://www.google.com</p>
+</body>
+</html>
+
+
+
+<html lang="en">
+<head>
+<title>HTML5 Week Input Type</title>
+<script>
+    function getValue() {
+        var week = document.getElementById("myweek").value;
+        alert(week);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="myweek">Select Week:</label>
+        <input type="week" id="myweek">
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+</body>
+</html>
